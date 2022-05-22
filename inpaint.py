@@ -11,6 +11,7 @@ from torch.utils.data import DataLoader
 
 from config import *
 from deepfillv2 import test_dataset
+from deepfillv2 import latent
 from deepfillv2 import utils
 
 def WGAN_tester():
@@ -90,6 +91,7 @@ def WGAN_tester():
         masked_img = img * (1 - mask) + mask
         mask = torch.cat((mask, mask, mask), 1)
         img_list = [second_out_wholeimg]
+        latent()
         name_list = ["second_out"]
         utils.save_sample_png(
             sample_folder=results_path,
