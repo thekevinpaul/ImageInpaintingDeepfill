@@ -1,3 +1,7 @@
+import cv2
+
+
+
 def latent():
   src = cv2.imread( "/content/ImageInpaintingDeepfill/ip/input_img.png")
   print(src.shape)
