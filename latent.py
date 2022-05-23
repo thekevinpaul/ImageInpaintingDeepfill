@@ -3,7 +3,7 @@ import cv2
 
 
 def latent():
-  src = cv2.imread( "/content/ImageInpaintingDeepfill/ip/input_img.png")
+  src = cv2.imread( "/content/ImageInpaintingDeepfill/inputp/input_img.png")
   print(src.shape)
   cv2_imshow(src) 
   grayScale = cv2.cvtColor( src, cv2.COLOR_RGB2GRAY )
