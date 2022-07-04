@@ -11,7 +11,7 @@ from torch.utils.data import DataLoader
 
 from config import *
 from deepfillv2 import test_dataset
-from deepfillv2 import latent
+#from deepfillv2 import latent
 from deepfillv2 import utils
 from test import latent
 
